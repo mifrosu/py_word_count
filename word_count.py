@@ -50,7 +50,7 @@ class WordCount(object):
         by value.
         '''
         self.stats_tuple_list = self.word_log.items()
-        self.stats_tuple_list = sorted(self.stats_tuple_list)
+        self.stats_tuple_list = sorted(self.stats_tuple_list) # for py3 compat.
         self.stats_tuple_list.sort(key=itemgetter(1), reverse=True)
 
     def print_stats(self, in_tuple_list):
