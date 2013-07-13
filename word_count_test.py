@@ -66,7 +66,7 @@ class WordCountTest(unittest.TestCase):
         self.test_count.generate_stats()
         self.assertEqual([("be", 2), ("to", 2), ("not", 1), ("or", 1)],
                          self.test_count.stats_tuple_list)
-        self.test_count.print_stats(self.test_count.stats_tuple_list)
+        #self.test_count.print_stats(self.test_count.stats_tuple_list)
 
 
 if __name__ == '__main__':
